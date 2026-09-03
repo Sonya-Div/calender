@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calender</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="all">
+        <div class="display-container">
+        <input type="text" class="black" id="display" readonly>
+        <button type="button" class="backspace-btn" onclick="backspace()">⌫</button>
+        </div>
+        <div class="button-grid">
+        <button type="button" class="car o1" onclick="clearScreen()">AC </button>
+        <button type="button" class="car o2" onclick="toggleSign()">+/-</button>
+        <button type="button" class="car o3" onclick="percentage()">%</button>
+        <button type="button" class="car o4" onclick="addToScreen('/')">/</button>
+        <button type="button" class="car o5" onclick="addToScreen('7')">7</button>
+        <button type="button" class="car o6" onclick="addToScreen('8')">8</button>
+        <button type="button" class="car o7" onclick="addToScreen('9')">9</button>
+        <button type="button" class="car o8" onclick="addToScreen('*')">*</button>
+        <button type="button" class="car o9" onclick="addToScreen('4')">4</button>
+        <button type="button" class="car o10" onclick="addToScreen('5')">5</button>
+        <button type="button" class="car o11" onclick="addToScreen('6')">6</button>
+        <button type="button" class="car o12" onclick="addToScreen('-')">-</button>
+        <button type="button" class="car o13" onclick="addToScreen('1')">1</button>
+        <button type="button" class="car o14" onclick="addToScreen('2')">2</button>
+        <button type="button" class="car o15" onclick="addToScreen('3')">3</button>
+        <button type="button" class="car o16" onclick="addToScreen('+')">+</button>
+        <button type="button" class="zero" onclick="addToScreen('0')">0</button>
+        <button type="button" class="cer o17" onclick="addToScreen('.')">.</button>
+        <button type="button" class="cer o18" onclick="calculateResault()">=</button>
+        </div>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>
